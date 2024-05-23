@@ -22,7 +22,27 @@ python app.py
 ```
 
 ## Dataset
-The Million Song Dataset (MSD) and the Taste Profile subset are used in this project. The data includes user-song interactions, metadata, and song lyrics. Please ensure you have the necessary permissions to use these datasets for academic purposes.
+The Million Song Dataset (MSD) and the Taste Profile subset are used in this project. The data includes user-song interactions, metadata, and song lyrics. It includes detailed audio features and metadata of over a million tracks.
+
+## Data Preprocessing Steps
+Efficient data preprocessing is critical for ensuring the quality and usability of our dataset:
+
+**Data Cleaning:** We start by eliminating inaccuracies and redundant information from the dataset. This involves correcting any anomalies in song titles or artist names and removing entries that lack essential data.
+
+**Data Standardization:** We ensure consistency across the dataset by standardizing text formats and other data types. This uniformity is crucial for accurate analysis and algorithm performance.
+
+**Data Filtering:** We selectively filter the dataset to focus on relevant data points. For example, we may exclude songs with very few listens as they do not contribute significantly to pattern recognition or prediction accuracy.
+
+**Data Enrichment:** Finally, we enhance the dataset by incorporating additional relevant information, such as categorizing songs by release periods or adding computed audio features. This step improves the dataset's depth, aiding in more nuanced analysis and recommendations.
+
+These preprocessing steps transform our dataset into a clean, consistent, and comprehensive resource, ready for effective analysis and model building in our music recommendation project.
+
+
+
+
+
+
+
 
 ## Baseline Models
 Singular Value Decomposition and a neural network\
